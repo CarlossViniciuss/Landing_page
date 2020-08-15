@@ -1,0 +1,296 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    background-color: black;
+}
+
+/** Divs Gerais **/
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+/****/
+
+header{
+    padding: 10px 2% 40px 2%;
+    background-color: #112e5a;
+}
+
+.logo-1{
+    float: left;
+    width: 100px;
+    height: 70px;
+    background-image: url(../Imagens/octopus.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: purple;*/
+}
+
+.logo-2{
+    float: right;
+    width: 100px;
+    height: 70px;
+    background-image: url(../Imagens/Octopus_logo.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*background-color: green;*/
+}
+
+section.cover-form{
+    width: 100%;
+}
+
+.bg{
+    position: relative;
+    height: 560px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../Imagens/wave.jpg);
+}
+
+.form-container{  
+    position: absolute;
+    right: 30px;
+    top: -2.5%; 
+    box-shadow: 2px 3px 2px 1px hsla(0, 0%, 61%, 0.824);
+    width: 400px;
+    height: 105%;
+    background-color: white;
+}
+
+.form-container h2{
+    font-family: 'Righteous', cursive;
+    font-weight: normal;
+    padding: 25px 15px;
+    color: white;
+    font-size: 18px;
+    background-color: rgb(29, 64, 117);
+}
+
+.form-container form{  
+    margin-top: 38px;
+    padding: 15px;
+}
+
+.form-container form p{
+    font-family: 'Righteous', cursive;
+    font-size: 14px;
+    color: #525252;
+}
+
+.form-wraper:not(:first-child){
+    margin-top: 40px;
+}
+
+.form-wraper:last-child{
+    margin-top: 20px;
+}
+
+.form-container form input[type=text]{
+    width: 100%;
+    border: 1px solid #ccc;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 10px;
+}
+
+.form-container form input[type=submit]{
+    background-color: rgb(29, 64, 117);
+    text-transform: uppercase;
+    color: white;
+    width: 100%;
+    font-size: 25px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+}
+
+section.chamada{
+    width: 100%;
+    z-index: 1;
+    text-align: center;   
+}
+
+section.chamada div.container{
+    background-color: rgb(23, 52, 99);
+    padding: 70px 0 50px 0;
+}
+
+section.chamada h2{
+    width: 98%;
+    max-width: 700px;
+    display: inline-block;
+    color: white; 
+    font-size: 24px;
+    font-weight: bold;
+}
+
+section.chamada p{
+    color: white;
+    font-size: 20px;
+    margin-top: 10px;
+    max-width: 625px;
+    display: inline-block;
+    width: 98%;
+}
+
+.flex-mosaico{
+    display: flex;
+}
+
+.item-1-mosaico{
+    background-position: center;
+    background-size: cover;
+    width: 60%;
+}
+
+.item-2-mosaico{
+    background-color: hsl(192, 66%, 15%);
+    padding: 60px 40px;
+    width: 40%;
+}
+
+.item-2-mosaico h3{
+    color: white;
+    font-size: 25px;
+}
+
+.item-2-mosaico p{
+    color: white;
+}
+
+.item-2-mosaico-2{
+    background-color: #3a0b0b;
+    padding: 60px 40px;
+    width: 40%;
+}
+
+.item-2-mosaico-2 h3{
+    color: white;
+    font-size: 25px;
+}
+
+.item-2-mosaico-2 p{
+    color: white;
+}
+
+.item-2-mosaico-3{
+    background-color: #3d0063;
+    padding: 60px 40px;
+    width: 40%;
+}
+
+.item-2-mosaico-3 h3{
+    color: white;
+    font-size: 25px;
+}
+
+.item-2-mosaico-3 p{
+    color: white;
+}
+
+.item-2-mosaico-4{
+    background-color: hsl(276, 68%, 14%);
+    padding: 60px 40px;
+    width: 40%;
+}
+
+.item-2-mosaico-4 h3{
+    color: white;
+    font-size: 25px;
+}
+
+.item-2-mosaico-4 p{
+    color: white;
+}
+
+footer{
+    text-align: center;
+    padding: 20px 0;
+    background-color: black;
+}
+
+footer p {
+    margin-top: 8px;
+    color: greenyellow;
+}
+
+footer img{
+    width: 15%;
+    display: inline-block;
+}
+
+
+@media screen and (max-width: 768px){
+
+    .flex-mosaico{
+        display: block;
+    }
+
+    .item-1-mosaico{
+        padding-top: 80%;
+        width: 100%;
+    }
+
+    .item-2-mosaico{
+        text-align: justify;
+        width: 100%;
+    }
+
+    .item-2-mosaico-2{
+        text-align: justify;
+        width: 100%;
+    }
+
+    .item-2-mosaico-3{
+        text-align: justify;
+        width: 100%;
+    }
+
+    .item-2-mosaico-4{
+        text-align: justify;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 960px){
+
+    .bg{
+        height: auto;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .form-container{
+        height: auto;
+        width: 96%;
+        max-width: 400px;
+        position: static;
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 510px){
+    header{
+        text-align: center;
+    }
+
+    .logo-1,.logo-2{
+        margin-top: 10px;
+        display: inline-block;
+        float: none;
+    }
+}
